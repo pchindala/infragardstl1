@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfraGard STL - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/radial.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Alert Bar -->
+  <div class="top-0 right-0 w-full text-right z-50 p-2 bg-[#111230]">
+    <a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer">
+      <button class="bg-red-600 text-white px-3 py-1 text-xs sm:text-sm sm:px-4 sm:py-1.5 mt-[-20px] sm:mt-[-27px] rounded" style="margin-top: -2px;">
+        Report Suspicious Activities
+      </button>
+    </a>
+  </div>
+
+  <!-- Logo -->
+  <img src="assets/images/logo.png" alt="InfraGard STL Logo" class="absolute top-6 md:top-2 lg:top-4 left-4 h-[4rem] sm:h-[5.5rem] z-50" />
+
+  <!-- Navigation Bar -->
+    <header class="top-10 w-full bg-white shadow-md z-40">
+        <div class="flex justify-between items-center px-2 md:px-6 pt-1 lg:py-3">
+        <!-- Logo spacer (keeps layout clean) -->
+        <div class="w-28 md:w-36"></div>
+    
+        <!-- Hamburger (mobile only) -->
+        <div class="lg:hidden ml-auto">
+            <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            </button>
+        </div>
+    
+        <!-- Desktop Navigation -->
+         
+        <nav>
+            <ul class="hidden lg:flex gap-6 items-center">
+            <li><a href="index.html" class="text-gray-800 hover:text-blue-700">Home</a></li>
+            <li><a href="about.html" class="text-gray-800 hover:text-blue-700">About</a></li>
+            <li><a href="events.html" class="text-gray-800 hover:text-blue-700">Events</a></li>
+            <li><a href="membership.html" class="text-gray-800 hover:text-blue-700">Membership</a></li>
+            <li><a href="resources.html" class="text-gray-800 hover:text-blue-700">Resources</a></li>
+            <li><a href="donation.html" class="text-gray-800 hover:text-blue-700">Donation</a></li>
+            <li><a href="sector.html" class="text-blue-700 hover:text-blue-700">Sectors</a></li>
+            <li><a href="contact.html" class="text-gray-800 hover:text-blue-700">Contact</a></li>
+            <li>
+                <a href="https://www.infragardnational.org/become-a-member/" target="_blank"
+                class="border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-blue-700 hover:text-white transition">
+                Join InfraGard
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </div>
+    
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md px-6 py-4 space-y-2">
+        <a href="index.html" class="block text-gray-800 hover:text-blue-700">Home</a>
+        <a href="about.html" class="block text-gray-800 hover:text-blue-700">About</a>
+        <a href="events.html" class="block text-gray-800 hover:text-blue-700">Events</a>
+        <a href="membership.html" class="block text-gray-800 hover:text-blue-700">Membership</a>
+        <a href="resources.html" class="block text-gray-800 hover:text-blue-700">Resources</a>
+        <a href="donation.html" class="block text-gray-800 hover:text-blue-700">Donation</a>
+        <a href="sector.html" class="block text-blue-700 hover:text-blue-700">Sectors</a>
+        <a href="contact.html" class="block text-gray-800 hover:text-blue-700">Contact</a>
+        <a href="https://www.infragard.org" target="_blank"
+            class="inline-block border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-blue-700 hover:text-white transition">
+            Join InfraGard
+        </a>
+        </div>
+    </header>
+
+<section class="container mx-auto mt-10 mb-20 px-4">
+  <div class="hidden lg:block">
+    <div class="angle-display" style="display: none;">Angle: <span id="angle">0</span>°</div>
+
+    <div class="wheel">
+      <div class="arc"><span>Sector Chief Program</span></div>
+      <div class="arc"><span>Finance</span></div>
+      <div class="arc"><span>Chemical</span></div>
+      <div class="arc"><span>Commercial Facilities</span></div>
+      <div class="arc"><span>Entertainment</span></div>
+      <div class="arc"><span>Faith-Based Venues</span></div>
+      <div class="arc"><span>Communications</span></div>
+      <div class="arc"><span>Dams</span></div>
+      <div class="arc"><span>Defense Industrial Base</span></div>
+      <div class="arc"><span>Education</span></div>
+      <div class="arc"><span>Emergency Services</span></div>
+      <div class="arc"><span>Energy</span></div>
+      <div class="arc"><span>Food and Agriculture</span></div>
+      <div class="arc"><span>Government Facilities</span></div>
+      <div class="arc"><span>Healthcare / Public Health</span></div>
+      <div class="arc"><span>Information Technology</span></div>
+      <div class="arc"><span>Critical Manufacturing</span></div>
+      <div class="arc"><span>Nuclear Reactors, Materials</span></div>
+      </div>
+  </div>
+
+<!-- Mobile Sectors List -->
+  <div class="block lg:hidden px-4 mt-8">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Sectors</h2>
+  <ul class="space-y-3">
+    <li><a href="#" onclick="loadSector(1)" class="text-blue-700 underline">Sector Chief Program</a></li>
+    <li><a href="#" onclick="loadSector(2)" class="text-blue-700 underline">Finance</a></li>
+    <li><a href="#" onclick="loadSector(3)" class="text-blue-700 underline">Chemical</a></li>
+    <li><a href="#" onclick="loadSector(4)" class="text-blue-700 underline">Commercial Facilities</a></li>
+    <li><a href="#" onclick="loadSector(5)" class="text-blue-700 underline">Entertainment</a></li>
+    <li><a href="#" onclick="loadSector(6)" class="text-blue-700 underline">Faith-Based Venues</a></li>
+    <li><a href="#" onclick="loadSector(7)" class="text-blue-700 underline">Communications</a></li>
+    <li><a href="#" onclick="loadSector(8)" class="text-blue-700 underline">Dams</a></li>
+    <li><a href="#" onclick="loadSector(9)" class="text-blue-700 underline">Defense Industrial Base</a></li>
+    <li><a href="#" onclick="loadSector(10)" class="text-blue-700 underline">Education</a></li>
+    <li><a href="#" onclick="loadSector(11)" class="text-blue-700 underline">Emergency Services</a></li>
+    <li><a href="#" onclick="loadSector(12)" class="text-blue-700 underline">Energy</a></li>
+    <li><a href="#" onclick="loadSector(13)" class="text-blue-700 underline">Food and Agriculture</a></li>
+    <li><a href="#" onclick="loadSector(14)" class="text-blue-700 underline">Government Facilities</a></li>
+    <li><a href="#" onclick="loadSector(15)" class="text-blue-700 underline">Healthcare </a></li>
+    <li><a href="#" onclick="loadSector(16)" class="text-blue-700 underline">Information Technology</a></li>
+    <li><a href="#" onclick="loadSector(17)" class="text-blue-700 underline">Critical Manufacturing</a></li>
+    <li><a href="#" onclick="loadSector(18)" class="text-blue-700 underline">Nuclear Reactors, Materials</a></li>
+  </ul>
+</div>
+
+
+
+      <div class="content-container relative mt-8 px-4 lg:px-0 ">
+        <!--Sector Chief Program Content-->
+        <div class="content active bg-white shadow-lg rounded-lg p-6 lg:p-10 max-w-4xl mx-auto text-gray-800 overflow-y-auto max-h-[80vh]" data-menu="sectorchiefprogram">
+            <h2 class="text-2xl font-bold mb-4">Sector Chief Program</h2>
+          <p>
+            <p class="text-gray-700 leading-relaxed text-base"> InfraGard is an FBI program with public/private sector organizations which has the stated objectives of: </p>
+            <ol class="list-decimal list-inside mt-2 mb-4 text-gray-600">
+              <li>Educating the public on infrastructure protection (via trainings/presentations)</li>
+              <li>Disseminating information via the InfraGard network</li>
+              <li>Producing (preventative) information obtained via the InfraGard network</li>
+              <li>Establishing a nexus between the government and private sector</li>
+            </ol>
+            <p>
+              Historically, InfraGard was intended to be a means for protecting the Information Technology industry. However, it has evolved to include all sectors of the infrastructure. One of the most significant changes in the InfraGard program is the creation of Sector Chief (SC) Representatives to serve as a conduit for the membership to better serve the many sectors of the infrastructure. These individuals will be highly respected professionals in their respective fields and will act as liaison for the members within their sectors. The SC positions were created to facilitate more information sharing and input from/to the members.
+            </p><br>
+            <p>
+              The InfraGard Sector Chief plan is a method by which the federal agencies through the FBI may create an open dialogue and working relationship with the private sectors of the national infrastructures. The individual chapter leadership is comprised of an Executive Committee that includes the FBI Coordinator and elected board members and/or officers (e.g., President, Vice-President, Secretary, Treasurer). Additionally, the board should also have a Membership Coordinator who is responsible for the coordination of the members into their respective sectors.
+            </p><br>
+            <p>
+              The membership is organized by sectors with Sector Chiefs who act as liaison between the Executive Committee and the membership that falls under their portion of the infrastructure. These sectors are aligned with those that have been set forth by the Department of Homeland Security (DHS). However, additional sectors may be created as sub-sectors of the 16 primary sectors to better serve the community of that InfraGard chapter.
+            </p>
+          </p>
+        </div>
+        <!-- Finance Content -->
+        <div class="content" data-menu="finance"><h2>Finance</h2><p>The Financial Services Sector includes thousands of depository institutions, providers of investment products, insurance companies, other credit and financing organizations, and the providers of the critical financial utilities and services that support these functions.<br><br>The Financial Services Sector represents a vital component of our nation's critical infrastructure. Large-scale power outages, recent natural disasters, and an increase in the number and sophistication of cyber attacks demonstrate the wide range of potential risks facing the sector.<br><br>Financial institutions provide a broad array of products from the largest institutions with assets greater than one trillion dollars to the smallest community banks and credit unions. Whether an individual savings account, financial derivatives, credit extended to a large organization, or investments made to a foreign country, these products allow customers to:</p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li>Deposit funds and make payments to other parties</li><li>Provide credit and liquidity to customers</li><li>Invest funds for both long and short periods</li><li>Transfer financial risks between customers</li></ol><p>Financial institutions are organized and regulated based on services provided by institutions. Within the sector, there are more than 18,800 federally insured depository institutions; thousands of providers of various investment products, including roughly 18,440 broker-dealer, investment adviser, and investment company complexes; providers of risk transfer products, including 7,948 domestic U.S. insurers; and many thousands of other credit and financing organizations.</p></div>
+        
+        <!-- Chemical Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="chemical"><h2 class="text-gray-900">Chemical Content</h2><p>Transforms natural raw materials into commonly used products benefiting society’s health, safety, and productivity. The chemical sector produces more than 70,000 products that are essential to automobiles, pharmaceuticals, food supply, electronics, water treatment, health, construction, and other necessities.<br><br>The Chemical Sector is an integral component of the U.S. economy, relying on and supporting a wide range of other critical infrastructure sectors.<br><br>The sector can be divided into five main segments, based on the end product produced:</p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li>Basic chemicals</li><li>Specialty chemicals</li><li>Agricultural chemicals</li><li>Pharmaceuticals</li><li>Consumer products</li></ol><p>Each of these segments has distinct characteristics, growth dynamics, markets, new developments, and issues.<br><br>The majority of Chemical Sector facilities are privately owned, requiring the Department of Homeland Security to work closely with the private sector and its industry associations to:</p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li>Set goals and objectives</li><li>Identify assets</li><li>Assess risks</li><li>Prioritize needs</li><li>Implement protective programs</li></ol><p>The Department of Homeland Security builds stakeholder capacity and enhances critical infrastructure security and resilience through voluntary partnerships that provide training, resources, and exercises. The Department has also issued regulatory Chemical Facility Anti-Terrorism Standards (CFATS) for any facility that manufactures, uses, stores, or distributes certain chemicals at or above specified quantities or concentrations.</p></div>
+
+        <!--Commercial Fcailities Content-->
+        <div class="content text-[#666666] text-base font-normal" data-menu="commercialfacilities"><h2 class="text-gray-900">Commercial Facilities Sector</h2><p>Includes prominent commercial centers, office buildings, sports stadiums, theme parks, and other sites where large numbers of people congregate to pursue business activities, conduct personal commercial transactions, or enjoy recreational pastimes.<br><br>The Commercial Facilities Sector includes a diverse range of sites that draw large crowds of people for shopping, business, entertainment, or lodging. Facilities within the sector operate on the principle of open public access, meaning that the general public can move freely without the deterrent of highly visible security barriers. The majority of these facilities are privately owned and operated, with minimal interaction with the federal government and other regulatory entities.<br><br>The Commercial Facilities Sector consists of eight subsectors:</p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li>Entertainment and Media (e.g., motion picture studios, broadcast media)</li><li>Gaming (e.g., casinos)</li><li>Lodging (e.g., hotels, motels, conference centers)</li><li>Outdoor Events (e.g., theme and amusement parks, fairs, campgrounds, parades)</li><li>Public Assembly (e.g., arenas, stadiums, aquariums, zoos, museums, convention centers)</li><li>Real Estate (e.g., office and apartment buildings, condominiums, mixed use facilities, self-storage)</li><li>Retail (e.g., retail centers and districts, shopping malls)</li><li>Sports Leagues (e.g., professional sports leagues and federations)</li></ol></div>
+
+        <!-- Entertainment Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="entertainment"><h2 class="text-gray-900">Entertainment & Large Venues Sector</h2><p>This sector focuses on venues in the Los Angeles Region where large numbers of people congregate to pursue business activities, conduct personal commercial transactions, or enjoy recreational pastimes. This includes different types of venues such as studios, theme parks, sports arenas, stadiums, convention centers, hotels, offices, retail and commercial complexes.<br><br>The Entertainment & Large Venues Sector consists of four subsectors:</p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li>Sports Leagues (e.g., professional sports leagues and federations)</li><li>Entertainment and Media (e.g., motion picture studios, broadcast media)</li><li>Outdoor Events (e.g., theme and amusement parks, fairs, campgrounds, parades)</li><li>Public Assembly (e.g., arenas, stadiums, aquariums, zoos, museums, convention centers)</li></ol></div>
+
+        <!-- Faith-Based Venues Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="faithbasedvenues"><h2 class="text-gray-900">Faith-Based Venues Sector</h2><p>This is a sub-sector of the Commercial Facilities Sector and focuses on the protection of faith-based venues. In the United States, there are over 300,000 houses of worship. In fact, 85% of the US population affiliated with a church, synagogue, mosque or other religious entity, making this sub-sector a very large and important part of our community. Americans congregate in faith-based venues to worship, learn, play, and bond as a community. However, these public gatherings are vulnerable, and adversaries may perceive houses of worship as attractive targets where they can inflict mass casualties, cause substantial psychological impact, and draw extensive media coverage.<br><br><strong class="text-gray-800">Mission</strong><br>To empower members with the knowledge, skills, and abilities to enhance the safety and security of their faith-based institutions through; the establishment and promotion of interfaith relationships, safety and security training and briefings, and the sharing of information and intelligence regarding threats to the faith-based community.</p></div>
+
+        <!-- Communications Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="communications"><h2 class="text-gray-900">Communications Sector</h2><p>Provides wired, wireless, and satellite communications to meet the needs of businesses and governments.<br><br>The Communications Sector is an integral component of the U.S. economy, underlying the operations of all businesses, public safety organizations, and government. Presidential Policy Directive 21 identifies the Communications Sector as critical because it provides an “enabling function” across all critical infrastructure sectors. Over the last 25 years, the sector has evolved from predominantly a provider of voice services into a diverse, competitive, and interconnected industry using terrestrial, satellite, and wireless transmission systems. The transmission of these services has become interconnected; satellite, wireless, and wireline providers depend on each other to carry and terminate their traffic and companies routinely share facilities and technology to ensure interoperability.<br><br>The private sector, as owners and operators of the majority of communications infrastructure, is the primary entity responsible for protecting sector infrastructure and assets. Working with the federal government, the private sector is able to predict, anticipate, and respond to sector outages and understand how they might affect the ability of the national leadership to communicate during times of crisis, impact the operations of other sectors, and affect response and recovery efforts.<br><br><strong class="text-gray-800">The Communications Sector is closely linked to other sectors, including:</strong><br></p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li>The Energy Sector provides power to run cellular towers, central offices, and other critical communications facilities;</li><li>The Information Technology Sector provides critical control systems and services, physical architecture and Internet infrastructure;</li><li>The Financial Services Sector relies on communications for the transmission of transactions and operations of financial markets;</li><li>The Emergency Services Sector depends on communications for directing resources, coordinating response, alerting the public, and receiving emergency 911 calls.</li></ol></div>
+
+        <!-- Dams Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="dams"><h2 class="text-gray-900">Dams Sector</h2><p>The Dams Sector delivers critical water retention and control services in the United States, including hydroelectric power generation, municipal and industrial water supplies, agricultural irrigation, sediment and flood control, river navigation for inland bulk shipping, industrial waste management, and recreation. Its key services support multiple critical infrastructure sectors and industries. Dams Sector assets irrigate at least 10 percent of U.S. cropland, help protect more than 43 percent of the U.S. population from flooding, and generate about 60 percent of electricity in the Pacific Northwest.<br><br>There are more than 87,000 dams in the United States—approximately 65 percent are privately owned and approximately 77 percent are regulated by state dams safety offices. The Dams Sector has interdependencies with a wide range of other sectors, including:<br></p><ol class="list-decimal pl-5 text-base font-normal text-[#666666] space-y-2 mt-2 mb-4"><li><strong>Communications</strong> - Communications networks enable remote Dams Sector operations and control</li><li><strong>Energy</strong> - Hydropower dams provide critical electricity resources and blackstart capabilities</li><li><strong>Food and Agriculture</strong> - Dams Sector assets provide water for irrigation and protect farmland from flooding</li><li><strong>Transportation Systems</strong> - Navigation lock systems in the Dams Sector enable all inland and intracoastal waterway freight movements. Major roads may traverse dams</li><li><strong>Water</strong> - Dams Sector assets provide drinking water supplies and pumping capabilities.</li></ol></div>
+
+        <!-- Defense Industrial Base Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="defenseindustrialbase"><h2 class="text-gray-900">Defense Industrial Base Sector</h2><p>Supplies the military with the means to protect the nation by producing weapons, aircraft, and ships and providing essential services, including information technology and supply and maintenance.<br><br>The Defense Industrial Base Sector is the worldwide industrial complex that enables research and development, as well as design, production, delivery, and maintenance of military weapons systems, subsystems, and components or parts, to meet U.S. military requirements. The Defense Industrial Base partnership consists of Department of Defense components, more than 100,000 Defense Industrial Base companies and their subcontractors who perform under contract to the Department of Defense, companies providing incidental materials and services to the Department of Defense, and government-owned/contractor-operated and government-owned/government-operated facilities. Defense Industrial Base companies include domestic and foreign entities, with production assets located in many countries. The sector provides products and services that are essential to mobilize, deploy, and sustain military operations. The Defense Industrial Base Sector does not include the commercial infrastructure of providers of services such as power, communications, transportation, or utilities that the Department of Defense uses to meet military operational requirements. These commercial infrastructure assets are addressed by other Sector-Specific Agencies.</p></div>
+
+        <!-- Education Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="education"><h2 class="text-gray-900">Education Sector</h2><p>The Education Sector consists of Pre-Kindergarten (Pre-K) programs; all public and private K–12 schools (including charter schools); public and private higher education schools and institutions; U.S. Department of Defense schools; and American-sponsored overseas schools assisted by the U.S. Department of State.<br><br>Education facilities (Pre-K through post-secondary) differ in comparison to other CIKR sectors or subsectors requiring infrastructure protection, as education facilities house mostly students for the majority of the day, five days a week or more, and often include after-school and evening activities and events. Further, education facilities are nontraditional emergency response agents, making comprehensive, all-hazards emergency management plans that are practiced and coordinated with community partners (e.g., law enforcement, fire, emergency management services, public health, local government) critical for the subsector. The Education Sector emphasizes that although most schools have some level of security, plans that increase infrastructure protection and resilience constitute a universally applicable and subsector appropriate protective measure that can work to prevent or mitigate an incident and the subsequent consequences, enhancing resilience for the education facility and the surrounding community.<br><br>Therefore, such plans are the primary focus of education facility infrastructure protective efforts and are the focus of this sector. The need for comprehensive, all-hazards plans has been highlighted historically and in recent years, as the subsector has been affected by incidents from school violence (e.g., the Columbine HS and Virginia Tech shootings) to devastating natural disasters (e.g., Hurricane Katrina). In addition, education facilities have been affected by hazardous materials and chemical spills that have forced students and staff to evacuate. Also, infectious disease outbreaks, (e.g., H1N1, Methicillin-Resistant Staphylococcus Aureus), and food recalls have also had significant impacts on the subsector.</p></div>
+
+        <!-- Emergency Services Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="emergencyservices"><h2 class="text-gray-900">Emergency Services Sector</h2><p>Saves lives and property from accidents and disaster. This sector includes fire, rescue, emergency medical services, and law enforcement organizations.<br><br>A system of prevention, preparedness, response, and recovery elements, the Emergency Services Sector (ESS) represents the nation’s first line of defense in the prevention and mitigation of risk from both intentional and unintentional manmade incidents, as well as from natural disasters. The ESS also serves as the primary protector for the other 15 critical infrastructure sectors.<br><br>Encompassing a wide range of emergency response functions, the primary mission of the ESS is to:<br><br>Save lives<br>Protect property and the environment<br>Assist communities impacted by disasters<br>Aid in recovery from emergencies<br><br>These functions, the majority of which are performed at the state, local, tribal, and territorial levels, are defined by five disciplines:<br><br>Law Enforcement<br>Fire and Emergency Services<br>Emergency Management<br>Emergency Medical Services<br>Public Works<br><br>Additionally, there are several specialized capabilities identified within the ESS, such as:<br><br>Hazardous Materials<br>Search and Rescue<br>Hazardous Devices Team/Public Safety Bomb Disposal<br>Tactical Teams (i.e., SWAT)<br>Aviation Units (i.e., police and medevac helicopters)<br>Public Safety Answering Points (i.e., 9-1-1 call centers)</p></div>
+
+        <!-- Energy Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="energy"><h2 class="text-gray-900">Energy Sector</h2><p>The Energy Sector encompasses representatives from those entities producing or supplying energy (electric power) used by all the Sectors and the refining, storage and distribution of oil and gas. The sector is divided into electricity and oil and natural gas.<br><br>The U.S. energy infrastructure fuels the economy of the 21st century. Without a stable energy supply, health and welfare are threatened, and the U.S. economy cannot function. Presidential Policy Directive 21 identifies the Energy Sector as uniquely critical because it provides an “enabling function” across all critical infrastructure sectors. More than 80 percent of the country’s energy infrastructure is owned by the private sector, supplying fuels to the transportation industry, electricity to households and businesses, and other sources of energy that are integral to growth and production across the nation.<br><br>The energy infrastructure is divided into three interrelated segments: electricity, oil, and natural gas. The U.S. electricity segment contains more than 6,413 power plants (this includes 3,273 traditional electric utilities and 1,738 nonutility power producers) with approximately 1,075 gigawatts of installed generation. Approximately 48 percent of electricity is produced by combusting coal (primarily transported by rail), 20 percent in nuclear power plants, and 22 percent by combusting natural gas. The remaining generation is provided by hydroelectric plants (6 percent), oil (1 percent), and renewable sources (solar, wind, and geothermal) (3 percent). The heavy reliance on pipelines to distribute products across the nation highlights the interdependencies between the Energy and Transportation Systems Sector.<br><br>The reliance of virtually all industries on electric power and fuels means that all sectors have some dependence on the Energy Sector. The Energy Sector is well aware of its vulnerabilities and is leading a significant voluntary effort to increase its planning and preparedness. Cooperation through industry groups has resulted in substantial information sharing of best practices across the sector. Many sector owners and operators have extensive experience abroad with infrastructure protection and have more recently focused their attention on cybersecurity.</p></div>
+
+        <!-- Food and Agriculture Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="foodandagriculture"><h2 class="text-gray-900">Food and Agriculture Sector</h2><p>The Food and Agriculture Sector provides for the fundamental need for food. The infrastructure includes supply chains for feed and crop production. Carries out the post-harvesting of the food supply, including processing and retail sales.<br><br>This sector is almost entirely under private ownership and is composed of an estimated 2.2 million farms, 900,000 restaurants, and more than 400,000 registered food manufacturing, processing, and storage facilities. This sector accounts for roughly one-fifth of the nation's economic activity.<br><br>The Food and Agriculture Sector has critical dependencies with many sectors, but particularly with the following:<br><br>Water and Wastewater Systems, for clean irrigation and processed water;<br>Transportation Systems, for movement of products and livestock;<br>Energy, to power the equipment needed for agriculture production and food processing; and<br>Financial Services, Chemical, and Dams.</p></div>
+
+        <!-- Government Facilities Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="governmentfacilities"><h2 class="text-gray-900">Government Facilities Sector</h2><p>Ensures continuity of functions for facilities owned and leased by the government, including all federal, state, territorial, local, and tribal government facilities located in the United States and abroad.<br><br>The Government Facilities Sector includes a wide variety of buildings, located in the United States and overseas, that are owned or leased by federal, state, local, and tribal governments. Many government facilities are open to the public for business activities, commercial transactions, or recreational activities while others that are not open to the public contain highly sensitive information, materials, processes, and equipment. These facilities include general-use office buildings and special-use military installations, embassies, courthouses, national laboratories, and structures that may house critical equipment, systems, networks, and functions. In addition to physical structures, the sector includes cyber elements that contribute to the protection of sector assets (e.g., access control systems and closed-circuit television systems) as well as individuals who perform essential functions or possess tactical, operational, or strategic knowledge.<br><br>The Education Facilities Subsector covers pre-kindergarten through 12th grade schools, institutions of higher education, and business and trade schools. The subsector includes facilities that are owned by both government and private sector entities.<br><br>The National Monuments and Icons Subsector encompasses a diverse array of assets, networks, systems, and functions located throughout the United States. Many National Monuments and Icons assets are listed in either the National Register of Historic Places or the List of National Historic Landmarks.</p></div>
+
+        <!-- Healthcare and Public Health Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="healthcarepublichealth"><h2 class="text-gray-900">Healthcare &amp; Public Health Sector</h2><p>Mitigates the risk of disasters and attacks and also provides recovery assistance if an attack occurs. The sector consists of health departments, clinics, and hospitals.<br><br>The Healthcare and Public Health Sector protects all sectors of the economy from hazards such as terrorism, infectious disease outbreaks, and natural disasters. Because the vast majority of the sector’s assets are privately owned and operated, collaboration and information sharing between the public and private sectors is essential to increasing resilience of the nation’s Healthcare and Public Health critical infrastructure. Operating in all U.S. states, territories, and tribal areas, the sector plays a significant role in response and recovery across all other sectors in the event of a natural or manmade disaster. While healthcare tends to be delivered and managed locally, the public health component of the sector, focused primarily on population health, is managed across all levels of government: national, state, regional, local, tribal, and territorial.<br><br>The Healthcare and Public Health Sector is highly dependent on fellow sectors for continuity of operations and service delivery, including: Communications, Emergency Services, Energy, Food and Agriculture, Information Technology, Transportation Systems, and Water and Wastewater Systems.</p></div>
+
+        <!-- Information Technology Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="informationtechnology"><h2 class="text-gray-900">Information Technology Sector</h2><p>Produces information technology and includes hardware manufacturers, software developers, and service providers, as well as the Internet as a key resource.<br><br>The Information Technology Sector is central to the nation’s security, economy, and public health and safety. Businesses, governments, academia, and private citizens are increasingly dependent upon Information Technology Sector functions. These virtual and distributed functions produce and provide hardware, software, and information technology systems and services, and – in collaboration with the Communications Sector – the Internet. The sector’s complex and dynamic environment makes identifying threats and assessing vulnerabilities difficult and requires that these tasks be addressed in a collaborative and creative fashion.<br><br>Information Technology Sector functions are operated by a combination of entities – often owners and operators and their respective associations – that maintain and reconstitute the network, including the Internet. Although information technology infrastructure has a certain level of inherent resilience, its interdependent and interconnected structure presents challenges as well as opportunities for coordinating public and private sector preparedness and protection activities.</p></div>
+
+        <!-- Critical Manufacturing Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="criticalmanufacturing"><h2 class="text-gray-900">Critical Manufacturing Sector</h2><p>The Critical Manufacturing (CM) Sector is crucial to the economic prosperity and continuity of the United States. U.S. manufacturers design, produce, and distribute products that provide more than one of every eight dollars of the U.S. gross domestic product and employ more than 10 percent of the nation's workforce.<br><br>The Critical Manufacturing Sector is crucial to the economic prosperity and continuity of the United States. A direct attack on or disruption of certain elements of the manufacturing industry could disrupt essential functions at the national level and across multiple critical infrastructure sectors.<br><br>The Critical Manufacturing Sector identified the following industries to serve as the core of the sector:</p><ol class="list-decimal pl-5 text-[#666666] space-y-1 mt-2 mb-4"><li>Primary Metal Manufacturing</li><li>Iron and Steel Mills and Ferro Alloy Manufacturing</li><li>Alumina and Aluminum Production and Processing</li><li>Nonferrous Metal (except Aluminum) Production and Processing</li><li>Machinery Manufacturing</li><li>Engine, Turbine, and Power Transmission Equipment Manufacturing</li><li>Electrical Equipment, Appliance, and Component Manufacturing</li><li>Electrical Equipment Manufacturing</li><li>Transportation Equipment Manufacturing</li><li>Vehicle Manufacturing</li><li>Aviation and Aerospace Product and Parts Manufacturing</li><li>Railroad Rolling Stock Manufacturing</li></ol><p>Products made by these manufacturing industries are essential to many other critical infrastructure sectors. The Critical Manufacturing Sector focuses on the identification, assessment, prioritization, and protection of nationally significant manufacturing industries within the sector that may be susceptible to manmade and natural disasters.</p></div>
+
+        <!-- Nuclear Reactors, Materials & Waste Content -->
+        <div class="content text-[#666666] text-base font-normal" data-menu="nuclearreactorsmaterials"><h2 class="text-gray-900">Nuclear Reactors, Materials & Waste Sector</h2><p>Nuclear power accounts for approximately 20 percent of our nation’s electrical generation, provided by 100 commercial nuclear reactors licensed to operate at 62 nuclear power plants.<br><br>The sector includes:</p><ol class="list-decimal pl-5 text-[#666666] space-y-1 mt-2 mb-4"><li>Nuclear power plants</li><li>Non-power nuclear reactors used for research, testing, and training</li><li>Manufacturers of nuclear reactors or components</li><li>Radioactive materials used primarily in medical, industrial, and academic settings</li><li>Nuclear fuel cycle facilities</li><li>Decommissioned nuclear power reactors</li><li>Transportation, storage, and disposal of nuclear and radioactive waste</li></ol><p>The sector is interdependent with other critical infrastructure sectors:</p><ol class="list-decimal pl-5 text-[#666666] space-y-1 mt-2 mb-4"><li>Chemical Sector, as a consumer of chemicals through the nuclear fuel cycle and at reactor sites</li><li>Energy Sector, as a supplier of electricity to our nation’s electrical grid</li><li>Healthcare and Public Health Sector, as a supplier of nuclear medicine, radiopharmaceuticals, and in the sterilization of blood and surgical supplies</li><li>Transportation Systems Sector, through the movement of radioactive materials.</li></ol></div>
+
+      </div>
+</section>
+  
+
+ <!-- Footer -->
+  <div style="height: 10px; width: 100%; background-color: #C0C0C0;"></div>
+  <footer class="bg-gray-100 border-t border-gray-300 px-4 md:px-8 pt-6 pb-4">
+    <!-- Top Section: 3 Columns -->
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-10">
+  
+      <!-- Left -->
+      <div class="text-center md:text-left">
+        <h2 class="text-lg font-semibold mb-1">InfraGard Saint Louis Members Alliance</h2>
+        <p class="text-sm font-semibold">Contact Information</p>
+        <p class="text-sm">Email:</p>
+        <p class="text-sm">Mailing Address:</p>
+      </div>
+  
+      <!-- Center Buttons -->
+      <div class="flex gap-4 flex-shrink-0 buttonclass">
+        <a href="membership.html"
+           class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded">
+          Membership
+        </a>
+        <a href="donation.html"
+           class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-2 rounded">
+          Donate Now
+        </a>
+      </div>
+  
+      <!-- Right Logo -->
+      <div class="flex justify-center md:justify-end flex-shrink-0">
+        <img src="assets/images/logo.png" alt="InfraGard Logo" class="h-42 w-auto" />
+      </div>
+    </div>
+  
+    <!-- Centered Disclaimer -->
+    <div class="mt-6 text-center text-xs text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed lg:mt-[-98px] ml-between-1024-1155">      <p>© 2025 InfraGard St. Louis Region. All rights reserved.</p>
+      <p class="demoo">
+        InfraGard® St. Louis Members Alliance is a non-profit organization serving as a public-private
+        partnership among U.S. businesses, individuals involved in the protection and resilience of
+        U.S. critical infrastructures, and the Federal Bureau of Investigation.
+      </p>
+    </div>
+  </footer>
+  
+  
+  
+  
+  <script src="js/radial.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
