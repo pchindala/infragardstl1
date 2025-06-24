@@ -91,38 +91,38 @@ arcs.forEach((arc, index) => {
 	});
 
 	// Hover-to-activate handler with debounce
-	// let hoverTimer = null;
+	let hoverTimer = null;
 
-	// arc.addEventListener('mouseenter', () => {
-	// 	clearTimeout(hoverTimer);
-	// 	hoverTimer = setTimeout(() => {
-	// 		if (currentIndex !== index + 1) {
-	// 			// Remove old active
-	// 			arcs[currentIndex - 1].classList.remove('active');
+	arc.addEventListener('mouseenter', () => {
+		clearTimeout(hoverTimer);
+		hoverTimer = setTimeout(() => {
+			if (currentIndex !== index + 1) {
+				// Remove old active
+				arcs[currentIndex - 1].classList.remove('active');
 
-	// 			// Update index
-	// 			currentIndex = index + 1;
-	// 			arc.classList.add('active');
+				// Update index
+				currentIndex = index + 1;
+				arc.classList.add('active');
 
-	// 			// Update content and angle
-	// 			const angle = index * 20;
-	// 			updateAngleDisplay(angle);
-	// 			updateContent(currentIndex);
+				// Update content and angle
+				const angle = index * 20;
+				updateAngleDisplay(angle);
+				updateContent(currentIndex);
 
-	// 			// Update visible arcs
-	// 			updateVisibleArcs();
+				// Update visible arcs
+				updateVisibleArcs();
 
-	// 			// Log hover event
-	// 			const menuItems = ['sectorchiefprogram','finance','chemical','commercialfacilities','entertainment','faithbasedvenues','communications','dams','defenseindustrialbase','education','emergencyservices','energy','foodandagriculture','governmentfacilities','healthcarepublichealth','informationtechnology','criticalmanufacturing','nuclearreactorsmaterials','transportationsystems','wastewatersystems']; 
-	// 			console.log('Hovered on:', menuItems[index]);
-	// 		}
-	// 	}, 750); // Delay in ms
-	// });
+				// Log hover event
+				const menuItems = ['sectorchiefprogram','finance','chemical','commercialfacilities','entertainment','faithbasedvenues','communications','dams','defenseindustrialbase','education','emergencyservices','energy','foodandagriculture','governmentfacilities','healthcarepublichealth','informationtechnology','criticalmanufacturing','nuclearreactorsmaterials','transportationsystems','wastewatersystems']; 
+				console.log('Hovered on:', menuItems[index]);
+			}
+		}, 750); // Delay in ms
+	});
 
-	// // Optional: Clear timer on mouse leave to prevent late activation
-	// arc.addEventListener('mouseleave', () => {
-	// 	clearTimeout(hoverTimer);
-	// });
+	// Optional: Clear timer on mouse leave to prevent late activation
+	arc.addEventListener('mouseleave', () => {
+		clearTimeout(hoverTimer);
+	});
 });
 
 // Handle mouse events for dragging

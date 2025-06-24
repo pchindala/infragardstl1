@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
 
-  //SUbnav in donations
+  //Subnav in donations
  function showTab(tab) {
   const tabs = ['donors', 'become'];
 
